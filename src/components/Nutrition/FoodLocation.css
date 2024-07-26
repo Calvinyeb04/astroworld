@@ -1,0 +1,177 @@
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #45a049;
+    --text-color: #333;
+    --background-color: #fff;
+}
+
+.food-location {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.NavBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.NavBar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.NavBar ul {
+    display: flex;
+    list-style: none;
+}
+
+.NavBar ul li {
+    margin-left: 20px;
+}
+
+.NavBar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.centered-header {
+    background-image: url('/public/HomePagepics/Headerpic.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+}
+
+.centered-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.centered-header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.centered-header p {
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.location-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px;
+}
+
+.location-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.location-card:hover {
+    transform: translateY(-5px);
+}
+
+.location-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.location-card h2 {
+    font-size: 1.5rem;
+    margin: 15px;
+    color: var(--primary-color);
+}
+
+.location-card p {
+    font-size: 1rem;
+    margin: 0 15px 15px;
+    color: var(--text-color);
+}
+
+.location-card button {
+    display: block;
+    width: calc(100% - 30px);
+    margin: 15px;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.location-card button:hover {
+    background-color: var(--secondary-color);
+}
+
+.additional-info {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.additional-info h3 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.additional-info p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #e8f5e9;
+    padding: 40px;
+    text-align: center;
+}
+
+.social-links h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.social-links a {
+    display: inline-block;
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 0 10px 10px;
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+}

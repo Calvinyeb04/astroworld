@@ -1,0 +1,73 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  height: 60px;
+  background-color: #f8f9fa; /* Light background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for some depth */
+}
+
+.logo {
+  width: 8rem;
+  height: auto;
+}
+
+.header-menu {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.header-menu li {
+  background-color: #e9ecef; /* Light grey background for buttons */
+  color: #333333; /* Dark text color */
+  padding: 0.5rem 1rem; /* Padding inside menu items */
+  border-radius: 5px; /* Rounded corners for a softer look */
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.header-menu li a {
+  text-decoration: none;
+  color: inherit; /* Inherit color from parent */
+}
+
+.header-menu li:hover {
+  background-color: #007bff; /* Primary blue color on hover */
+  color: #ffffff; /* White text color on hover */
+}
+
+/* Optional: Additional hover effects for individual items */
+.header-menu li:nth-child(1):hover {
+  animation: bobbing 0.5s ease-in-out;
+}
+
+.header-menu li:nth-child(2):hover {
+  animation: rotate 0.5s ease-in-out;
+}
+
+/* Animations */
+@keyframes bobbing {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+
