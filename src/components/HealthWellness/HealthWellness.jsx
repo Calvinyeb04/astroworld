@@ -2,8 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./HealthWellness.css";
 import YOGA from "../../assets/YOGA.jpg";
-import Aerobics from "../../assets/healthWellnesspics/Aerobics.jpg";
-import imageasset from "../../assets/healthWellnesspics/image-asset.jpeg";
 
 const HealthWellness = () => {
   return (
